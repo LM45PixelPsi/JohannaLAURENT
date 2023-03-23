@@ -30,7 +30,8 @@ body .sec1 {
   transform: translateY(-8%);
 }
 body .sec1 svg {
-  height: 120px;
+  width: 15%;
+  min-width: 100px;
   fill: rgb(75, 12, 12);
 }
 body .sec1 h1,
@@ -40,6 +41,7 @@ body .sec1 p {
 }
 body .sec1 h1 {
   margin: 20px 0 10px;
+  font-size: 2rem;
   opacity: 0;
   transform: translateY(20px);
   animation: h1anim 2s forwards;
@@ -48,6 +50,11 @@ body .sec1 h1 {
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+@media screen and (max-width: 400px) {
+  body .sec1 h1 {
+    font-size: 1.5rem;
   }
 }
 body .sec1 p {
