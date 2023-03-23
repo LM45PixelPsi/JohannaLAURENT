@@ -1,0 +1,32 @@
+// COLORS
+
+$bg1 :FBF8F6;
+$t1 : rgb(75, 12, 12);
+
+// FONTS
+
+$f1 :'Lato',
+sans-serif;
+
+h1 {
+    font-family: $f1;
+}
+
+p {
+    font-family: $f1;
+}
+
+// LA BASE
+
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: XX, sans-serif;
+    font-weight: 500;
+
+    text-decoration: none;
+}
