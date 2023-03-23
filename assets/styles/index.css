@@ -27,17 +27,44 @@ body .sec1 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transform: translateY(-8%);
 }
-body h1,
-body p {
+body .sec1 svg {
+  height: 120px;
+  fill: rgb(75, 12, 12);
+}
+body .sec1 h1,
+body .sec1 p {
   text-align: center;
   color: rgb(75, 12, 12);
+}
+body .sec1 h1 {
+  margin: 20px 0 10px;
   opacity: 0;
   transform: translateY(20px);
-  animation: headeranim 3s forwards;
+  animation: h1anim 2s forwards;
 }
-@keyframes headeranim {
+@keyframes h1anim {
   to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+body .sec1 p {
+  opacity: 0;
+  transform: translateY(0px);
+  animation: panim 4s forwards;
+}
+@keyframes panim {
+  0% {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+  100% {
     transform: translateY(0);
     opacity: 1;
   }

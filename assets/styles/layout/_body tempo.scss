@@ -9,22 +9,57 @@ body {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-    }
+        transform: translateY(-8%);
 
-    h1,
-    p {
-        text-align: center;
-        color: $t1;
-        opacity: 0;
-        transform: translateY(20px);
-        animation: headeranim 3s forwards;
-
-        @keyframes headeranim {
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-
+        svg {
+            height: 120px;
+            fill: $t1;
         }
+
+        h1,
+        p {
+            text-align: center;
+            color: $t1;
+        }
+
+        h1 {
+            margin: 20px 0 10px;
+
+            opacity: 0;
+            transform: translateY(20px);
+            animation: h1anim 2s forwards;
+
+            @keyframes h1anim {
+                to {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
+        }
+
+        p {
+            opacity: 0;
+            transform: translateY(0px);
+            animation: panim 4s forwards;
+
+            @keyframes panim {
+                0% {
+                    transform: translateY(0px);
+                    opacity: 0;
+                }
+
+                50% {
+                    transform: translateY(0px);
+                    opacity: 0;
+                }
+
+                100% {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
+        }
+
     }
+
 }
