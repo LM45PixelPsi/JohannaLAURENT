@@ -81,11 +81,10 @@ header {
 
         .headerimgcontainer {
             #bg {
-                height: 100%;
                 max-height: 280px;
                 width: 100%;
                 object-fit: cover;
-                mask-image: url(/assets/svg/headerpolygon.svg);
+                mask-image: url(/assets/svg/headermask.svg);
                 mask-size: contain;
                 mask-repeat: no-repeat;
                 mask-position: right;

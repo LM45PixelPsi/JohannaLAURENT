@@ -106,13 +106,12 @@ header .headermaincontainer .headertextcontainer h3 {
   color: rgb(19, 18, 20);
 }
 header .headermaincontainer .headerimgcontainer #bg {
-  height: 100%;
   max-height: 280px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-mask-image: url(/assets/svg/headerpolygon.svg);
-          mask-image: url(/assets/svg/headerpolygon.svg);
+  -webkit-mask-image: url(/assets/svg/headermask.svg);
+          mask-image: url(/assets/svg/headermask.svg);
   -webkit-mask-size: contain;
           mask-size: contain;
   -webkit-mask-repeat: no-repeat;
