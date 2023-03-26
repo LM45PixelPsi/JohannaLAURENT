@@ -1,7 +1,10 @@
 // COLORS
 
-$bg1 :FBF8F6;
-$t1 : rgb(75, 12, 12);
+$bg1 :#FBF8F6;
+$bg2 :#C5F0DD;
+
+$tc : rgb(233, 250, 255);
+$tf : rgb(19, 18, 20);
 
 // FONTS
 
@@ -10,6 +13,11 @@ sans-serif;
 
 h1 {
     font-family: $f1;
+    font-size: 2rem;
+
+    @media screen and (max-width: 400px) {
+        font-size: 1.5rem;
+    }
 }
 
 p {
@@ -22,11 +30,30 @@ p {
     list-style: none;
     margin: 0;
     padding: 0;
-
+    outline: none;
     box-sizing: border-box;
-
-    font-family: XX, sans-serif;
-    font-weight: 500;
-
+    font-family: $f1, sans-serif;
     text-decoration: none;
+
+}
+
+// BUTTON
+
+button {
+    font-family: $f1;
+    text-transform: uppercase;
+    color: $tc;
+    border: none;
+    background: $tf;
+    padding: 10px 30px;
+    transition: 1.4s;
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+    border-radius: 4rem;
+
+    &:hover {
+        cursor: pointer;
+        background: $tc;
+        color: $tf;
+    }
 }
