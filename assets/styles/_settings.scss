@@ -1,10 +1,9 @@
 // COLORS
 
-$bg1 :#FBF8F6;
-$bg2 :#C5F0DD;
-
-$tc : rgb(233, 250, 255);
-$tf : rgb(19, 18, 20);
+$c1 : #FBFFFD;
+$c2 : #0C442B;
+$c3 : #F6A1BB;
+$c4 : #D3DDFF;
 
 // FONTS
 
@@ -13,15 +12,28 @@ sans-serif;
 
 h1 {
     font-family: $f1;
-    font-size: 2rem;
+    font-size: 4rem;
+}
 
-    @media screen and (max-width: 400px) {
-        font-size: 1.5rem;
-    }
+h2 {
+    font-family: $f1;
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-family: $f1;
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-family: $f1;
+    font-size: 0.8rem;
+    font-weight: bold;
 }
 
 p {
     font-family: $f1;
+    font-size: 0.8rem;
 }
 
 // LA BASE
@@ -42,9 +54,9 @@ p {
 button {
     font-family: $f1;
     text-transform: uppercase;
-    color: $tc;
+    color: $c1;
     border: none;
-    background: $tf;
+    background: $c2;
     padding: 10px 30px;
     transition: 1.4s;
     font-size: 0.6rem;
@@ -53,7 +65,7 @@ button {
 
     &:hover {
         cursor: pointer;
-        background: $tc;
-        color: $tf;
+        background: $c1;
+        color: $c2;
     }
 }
