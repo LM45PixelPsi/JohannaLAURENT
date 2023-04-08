@@ -1,0 +1,19 @@
+.sec-act {
+    height: 100vh;
+    padding: calc((((((((((100vw / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247);
+
+    .sec-act-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: calc(((((((((((100vw / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247);
+
+        .sec-act-div {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+    }
+
+    svg {
+        max-width: 100px;
+    }
+}

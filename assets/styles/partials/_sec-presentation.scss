@@ -1,0 +1,30 @@
+.sec-presentation {
+    background: $c1;
+    height: 100vh;
+    padding: 4.75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .sec-presentation-container {
+        display: grid;
+        justify-items: center;
+        gap: 1rem;
+
+        img {
+            border-radius: 100%;
+            width: calc(((((((100vw / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247);
+            ;
+        }
+
+        svg {
+            width: calc(((((((((((((100vw / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247);
+        }
+
+        p {
+            width: calc((100vw/1.3247)/1.3247);
+            text-align: justify;
+        }
+    }
+}

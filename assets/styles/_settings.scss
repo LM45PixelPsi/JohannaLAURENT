@@ -12,28 +12,28 @@ sans-serif;
 
 h1 {
     font-family: $f1;
-    font-size: 4rem;
+    font-size: 3.0269rem;
 }
 
 h2 {
     font-family: $f1;
-    font-size: 2.4rem;
+    font-size: 1.7436rem;
 }
 
 h3 {
     font-family: $f1;
-    font-size: 1.6rem;
+    font-size: 1.3247rem;
 }
 
 h4 {
     font-family: $f1;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
 p {
     font-family: $f1;
-    font-size: 0.8rem;
+    font-size: calc(1rem/1.3247);
 }
 
 // LA BASE
@@ -46,7 +46,11 @@ p {
     box-sizing: border-box;
     font-family: $f1, sans-serif;
     text-decoration: none;
+    scroll-behavior: smooth;
 
+    a:visited {
+        color: inherit;
+    }
 }
 
 // BUTTON
@@ -69,3 +73,9 @@ button {
         color: $c2;
     }
 }
+
+// BODY 
+
+// body {
+//     padding: 0 4.75%;
+// }
