@@ -1,27 +1,32 @@
 h1 {
   font-family: "Lato", sans-serif;
   font-size: 3.0269rem;
+  color: #0C442B;
 }
 
 h2 {
   font-family: "Lato", sans-serif;
   font-size: 1.7436rem;
+  color: #0C442B;
 }
 
 h3 {
   font-family: "Lato", sans-serif;
   font-size: 1.3247rem;
+  color: #0C442B;
 }
 
 h4 {
   font-family: "Lato", sans-serif;
   font-size: 1rem;
   font-weight: bold;
+  color: #0C442B;
 }
 
 p {
   font-family: "Lato", sans-serif;
   font-size: 0.7548878991rem;
+  color: #0C442B;
 }
 
 * {
@@ -34,8 +39,12 @@ p {
   text-decoration: none;
   scroll-behavior: smooth;
 }
+* a {
+  cursor: pointer;
+  color: #0C442B;
+}
 * a:visited {
-  color: inherit;
+  color: #0C442B inherit;
 }
 
 button {
@@ -54,6 +63,20 @@ button:hover {
   cursor: pointer;
   background: #FBFFFD;
   color: #0C442B;
+}
+
+form {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+form input,
+form textarea,
+form button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  line-height: none;
 }
 
 header {
@@ -124,21 +147,173 @@ header nav ul li:hover {
 
 .sec-act {
   height: 100vh;
-  padding: 6.0093103942vw;
+  padding-left: 6.0093103942vw;
+  padding-right: 6.0093103942vw;
 }
 .sec-act .sec-act-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 4.5363556988vw;
+  height: 56.9855740279vh;
 }
 .sec-act .sec-act-container .sec-act-div {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 33% 8% 54% 5%;
+  text-align: justify;
+  overflow: hidden;
 }
-.sec-act svg {
-  max-width: 100px;
+.sec-act .sec-act-container .sec-act-div svg {
+  fill: #F6A1BB;
+  margin: 0 auto;
+  height: 90%;
+}
+.sec-act .sec-act-container .sec-act-div h4 {
+  text-align: center;
+  color: #F6A1BB;
 }
 
-.sec-art-mart img {
-  max-width: 100px;
+.sec-loc {
+  height: 80vh;
+  padding-left: 6.0093103942vw;
+  padding-right: 6.0093103942vw;
+}
+.sec-loc .sec-loc-container {
+  display: flex;
+}
+.sec-loc .sec-loc-container .sec-loc-bloc {
+  padding-right: 6.0093103942vw;
+}
+.sec-loc .sec-loc-container .sec-loc-bloc h2 {
+  margin-bottom: 1vh;
+}
+.sec-loc .sec-loc-container .sec-loc-bloc h4 {
+  margin-bottom: 10vh;
+}
+.sec-loc .sec-loc-container .sec-loc-bloc a {
+  color: #F6A1BB;
+}
+
+.sec-contact {
+  height: 100vh;
+  position: relative;
+  padding: 6.0093103942vw;
+}
+.sec-contact .sec-contact-tel {
+  margin-bottom: 6.0093103942vw;
+}
+.sec-contact .sec-contact-tel h2 {
+  font-size: calc(1rem + 3vw);
+}
+.sec-contact .sec-contact-tel a {
+  font-size: calc(1rem + 2vw);
+}
+.sec-contact .sec-contact-mail h3 {
+  font-size: calc(1rem + 2vw);
+}
+.sec-contact .sec-contact-mail a {
+  font-size: calc(1rem + 1.5vw);
+}
+.sec-contact p {
+  position: absolute;
+  bottom: 6.0093103942vw;
+  padding-top: 2px;
+  border-top: solid 1px #0C442B;
+}
+
+.sec-art-mart {
+  height: 100vh;
+  padding: 6.0093103942vw;
+}
+.sec-art-mart .sec-art-mart-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.9514368045vw;
+}
+.sec-art-mart .sec-art-mart-container .txt-art-mart {
+  background: #D3DDFF;
+  border-radius: 0.3rem;
+  padding: 4.5363556988vw;
+}
+.sec-art-mart .sec-art-mart-container .art-mart-bg {
+  background: url(/assets/img/ArtMartialBG.jpg) no-repeat center/cover;
+  border-radius: 0.3rem;
+}
+.sec-art-mart form {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.9514368045vw;
+  background: none;
+  padding: 1.9514368045vw;
+  width: 30vw;
+  border-radius: 0.3rem;
+  margin: 1.9514368045vw auto;
+  border: 0.1rem solid #F6A1BB;
+}
+.sec-art-mart form input,
+.sec-art-mart form textarea,
+.sec-art-mart form button {
+  margin: 0;
+  padding: 0.3rem;
+  border: none;
+  line-height: none;
+  border-radius: 0.3rem;
+  color: #0C442B;
+}
+.sec-art-mart form button {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  color: #0C442B;
+  border: solid 0.1rem #0C442B;
+  background: none;
+  padding: 10px 30px;
+  transition: 0.4s;
+  font-size: 0.6rem;
+  letter-spacing: 1px;
+}
+.sec-art-mart form button:hover {
+  cursor: pointer;
+  background: #0C442B;
+  color: #FBFFFD;
+}
+.sec-art-mart form input {
+  border: 0.1rem solid #F6A1BB;
+}
+.sec-art-mart form ::-moz-placeholder {
+  color: #F6A1BB;
+}
+.sec-art-mart form ::placeholder {
+  color: #F6A1BB;
+}
+
+.sec-phrase-finale {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 6.0093103942vw;
+  margin: 0 auto;
+  max-width: 900px;
+}
+.sec-phrase-finale h3 {
+  font-size: calc(1rem + 2vw);
+  text-align: center;
+  line-height: calc(1rem + 4vw);
+  font-weight: lighter;
+}
+
+footer {
+  height: 18.5052425633vh;
+  padding: 6.0093103942vh;
+  background: #F6A1BB;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+footer a {
+  color: #FBFFFD;
+}
+footer .footer-date {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  color: #FBFFFD;
 }/*# sourceMappingURL=index.css.map */

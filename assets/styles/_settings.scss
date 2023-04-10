@@ -13,27 +13,32 @@ sans-serif;
 h1 {
     font-family: $f1;
     font-size: 3.0269rem;
+    color: $c2;
 }
 
 h2 {
     font-family: $f1;
     font-size: 1.7436rem;
+    color: $c2;
 }
 
 h3 {
     font-family: $f1;
     font-size: 1.3247rem;
+    color: $c2;
 }
 
 h4 {
     font-family: $f1;
     font-size: 1rem;
     font-weight: bold;
+    color: $c2;
 }
 
 p {
     font-family: $f1;
     font-size: calc(1rem/1.3247);
+    color: $c2;
 }
 
 // LA BASE
@@ -48,8 +53,13 @@ p {
     text-decoration: none;
     scroll-behavior: smooth;
 
+    a {
+        cursor: pointer;
+        color: $c2;
+    }
+
     a:visited {
-        color: inherit;
+        color: $c2 inherit;
     }
 }
 
@@ -73,6 +83,24 @@ button {
         color: $c2;
     }
 }
+
+// FORM
+
+form {
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    input,
+    textarea,
+    button {
+        margin: 0;
+        padding: 0;
+        border: none;
+        line-height: none;
+    }
+}
+
 
 // BODY 
 

@@ -1,0 +1,34 @@
+.sec-contact {
+    height: 100vh;
+    position: relative;
+    padding: calc((((((((((100vw / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247);
+
+    .sec-contact-tel {
+        margin-bottom: calc((((((((((100vw / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247);
+
+        h2 {
+            font-size: calc(1rem + 3vw);
+        }
+
+        a {
+            font-size: calc(1rem + 2vw);
+        }
+    }
+
+    .sec-contact-mail {
+        h3 {
+            font-size: calc(1rem + 2vw);
+        }
+
+        a {
+            font-size: calc(1rem + 1.5vw);
+        }
+    }
+
+    p {
+        position: absolute;
+        bottom: calc((((((((((100vw / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247);
+        padding-top: 2px;
+        border-top: solid 1px $c2;
+    }
+}

@@ -1,0 +1,20 @@
+footer {
+    height: calc((((((100vh / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247);
+    padding: calc((((((((((100vh / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247);
+    background: $c3;
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    a {
+        color: $c1;
+    }
+
+    .footer-date {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        color: $c1;
+    }
+}

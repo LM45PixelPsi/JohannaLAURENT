@@ -1,5 +1,70 @@
 .sec-art-mart {
-    img {
-        max-width: 100px;
+    height: 100vh;
+    padding: calc((((((((((100vw / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247);
+
+    .sec-art-mart-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: calc((((((((((((((100vw / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247)/ 1.3247)/ 1.3247)/ 1.3247)/ 1.3247);
+
+        .txt-art-mart {
+            background: $c4;
+            border-radius: 0.3rem;
+            padding: calc(((((((((((100vw / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247)/ 1.3247);
+        }
+
+        .art-mart-bg {
+            background: url(/assets/img/ArtMartialBG.jpg) no-repeat center/cover;
+            border-radius: 0.3rem;
+        }
+    }
+
+    form {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: calc((((((((((((((100vw / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247)/ 1.3247)/ 1.3247)/ 1.3247)/ 1.3247);
+        background: none;
+        padding: calc((((((((((((((100vw / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247)/ 1.3247)/ 1.3247)/ 1.3247)/ 1.3247);
+        width: 30vw;
+        border-radius: 0.3rem;
+        margin: calc((((((((((((((100vw / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247)/ 1.3247)/ 1.3247)/ 1.3247)/ 1.3247) auto;
+        border: 0.1rem solid $c3;
+
+        input,
+        textarea,
+        button {
+            margin: 0;
+            padding: 0.3rem;
+            border: none;
+            line-height: none;
+            border-radius: 0.3rem;
+            color: $c2;
+        }
+
+        button {
+            font-family: $f1;
+            text-transform: uppercase;
+            color: $c2;
+            border: solid 0.1rem $c2;
+            background: none;
+            padding: 10px 30px;
+            transition: 0.4s;
+            font-size: 0.6rem;
+            letter-spacing: 1px;
+
+            &:hover {
+                cursor: pointer;
+                background: $c2;
+                color: $c1;
+            }
+        }
+
+        input {
+            border: 0.1rem solid $c3;
+        }
+
+        ::placeholder {
+            color: $c3;
+        }
     }
 }
