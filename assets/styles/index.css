@@ -81,35 +81,21 @@ form button {
 
 header {
   height: 100vh;
-  display: grid;
-  grid-template-columns: 61.8% 38.2%;
-  padding: 0 0 0 4.75%;
-  background: #F6A1BB;
-}
-header .headertxtcontainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 4.75%;
-  background: #D3DDFF;
-}
-header nav {
-  position: relative;
+  background: none;
+  padding-right: 6.0093103942vw;
+  padding-left: 6.0093103942vw;
 }
 header nav ul {
   display: flex;
-  justify-content: center;
+  justify-content: right;
 }
 header nav ul li {
-  position: absolute;
-  bottom: 4.75%;
-  margin: 0 auto;
   color: #F6A1BB;
-  border: none;
+  border: 0.1rem solid #0C442B;
   background: #FBFFFD;
   padding: 10px 30px;
   transition: 0.9s;
-  font-size: 1rem;
+  font-size: 0.7548878991rem;
   letter-spacing: 1px;
   border-radius: 4rem;
 }
@@ -117,6 +103,13 @@ header nav ul li:hover {
   box-shadow: 0;
   cursor: pointer;
   color: #0C442B;
+}
+header .headertxtcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: none;
+  height: 24.5112100853vh;
 }
 
 .sec-presentation {
@@ -235,7 +228,7 @@ header nav ul li:hover {
   padding: 4.5363556988vw;
 }
 .sec-art-mart .sec-art-mart-container .art-mart-bg {
-  background: url(/assets/img/art-martial-bg.jpg) no-repeat center/cover;
+  background: url("/assets/img/art-martial-bg.jpg") no-repeat center/cover;
   border-radius: 0.3rem;
 }
 .sec-art-mart form {
