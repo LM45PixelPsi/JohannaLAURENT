@@ -228,7 +228,7 @@ header .headertxtcontainer {
   padding: 4.5363556988vw;
 }
 .sec-art-mart .sec-art-mart-container .art-mart-bg {
-  background: url("/assets/img/art-martial-bg.jpg") no-repeat center/cover;
+  background: url("../img/art-martial-bg.jpg") no-repeat center/cover;
   border-radius: 0.3rem;
 }
 .sec-art-mart form {
