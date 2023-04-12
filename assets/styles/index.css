@@ -1,6 +1,6 @@
 h1 {
   font-family: "Lato", sans-serif;
-  font-size: 3.0269rem;
+  font-size: calc(1rem + 3vw);
   color: #0C442B;
 }
 
@@ -82,14 +82,18 @@ form button {
 header {
   height: 100vh;
   background: none;
-  padding-right: 6.0093103942vw;
-  padding-left: 6.0093103942vw;
+  display: flex;
+  padding: 7.9605334792vw;
 }
-header nav ul {
+header .header-container {
+  display: flex;
+  flex-direction: column;
+}
+header .header-container nav ul {
   display: flex;
   justify-content: right;
 }
-header nav ul li {
+header .header-container nav ul li {
   color: #F6A1BB;
   border: 0.1rem solid #0C442B;
   background: #FBFFFD;
@@ -99,23 +103,26 @@ header nav ul li {
   letter-spacing: 1px;
   border-radius: 4rem;
 }
-header nav ul li:hover {
+header .header-container nav ul li:hover {
   box-shadow: 0;
   cursor: pointer;
   color: #0C442B;
+  transform: translateY(-4px);
 }
-header .headertxtcontainer {
+header .header-container .headertxtcontainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background: none;
-  height: 24.5112100853vh;
+  height: 100%;
+  width: 75.4887899147%;
+}
+header .header-container .headertxtcontainer h1 {
+  margin-bottom: 2rem;
 }
 
 .sec-presentation {
-  background: #FBFFFD;
-  height: 100vh;
-  padding: 4.75%;
+  padding: 7.9605334792vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -139,9 +146,7 @@ header .headertxtcontainer {
 }
 
 .sec-act {
-  height: 100vh;
-  padding-left: 6.0093103942vw;
-  padding-right: 6.0093103942vw;
+  padding: 7.9605334792vw;
 }
 .sec-act .sec-act-container {
   display: grid;
@@ -166,9 +171,7 @@ header .headertxtcontainer {
 }
 
 .sec-loc {
-  height: 80vh;
-  padding-left: 6.0093103942vw;
-  padding-right: 6.0093103942vw;
+  padding: 7.9605334792vw;
 }
 .sec-loc .sec-loc-container {
   display: flex;
@@ -215,32 +218,35 @@ header .headertxtcontainer {
 
 .sec-art-mart {
   height: 100vh;
-  padding: 6.0093103942vw;
+  padding: 7.9605334792vw;
+  background: linear-gradient(#0C442B, rgba(255, 0, 0, 0)), url("../img/art-martial-bg.jpg") no-repeat center/cover fixed;
 }
 .sec-art-mart .sec-art-mart-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.9514368045vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
 }
 .sec-art-mart .sec-art-mart-container .txt-art-mart {
-  background: #D3DDFF;
+  width: 56.9855740279%;
   border-radius: 0.3rem;
-  padding: 4.5363556988vw;
 }
-.sec-art-mart .sec-art-mart-container .art-mart-bg {
-  background: url("../img/art-martial-bg.jpg") no-repeat center/cover;
-  border-radius: 0.3rem;
+.sec-art-mart .sec-art-mart-container .txt-art-mart h2,
+.sec-art-mart .sec-art-mart-container .txt-art-mart h4,
+.sec-art-mart .sec-art-mart-container .txt-art-mart p {
+  color: #FBFFFD;
+  text-align: justify;
+}
+.sec-art-mart .sec-art-mart-container .txt-art-mart h4 {
+  padding: 1rem 0;
 }
 .sec-art-mart form {
   display: grid;
   grid-template-rows: 1fr 1fr;
   gap: 1.9514368045vw;
   background: none;
-  padding: 1.9514368045vw;
   width: 30vw;
   border-radius: 0.3rem;
-  margin: 1.9514368045vw auto;
-  border: 0.1rem solid #F6A1BB;
 }
 .sec-art-mart form input,
 .sec-art-mart form textarea,
@@ -250,32 +256,40 @@ header .headertxtcontainer {
   border: none;
   line-height: none;
   border-radius: 0.3rem;
-  color: #0C442B;
+}
+.sec-art-mart form input,
+.sec-art-mart form textarea {
+  background: none;
+  color: #FBFFFD;
 }
 .sec-art-mart form button {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   color: #0C442B;
-  border: solid 0.1rem #0C442B;
-  background: none;
   padding: 10px 30px;
-  transition: 0.4s;
+  transition: 1s;
   font-size: 0.6rem;
   letter-spacing: 1px;
+  background: linear-gradient(60deg, #FBFFFD, #F6A1BB);
+  background-size: 300%;
+  background-position: left;
 }
 .sec-art-mart form button:hover {
   cursor: pointer;
-  background: #0C442B;
-  color: #FBFFFD;
+  background-position: center;
+  transform: translateY(-3px);
 }
 .sec-art-mart form input {
-  border: 0.1rem solid #F6A1BB;
+  border: 0.1rem solid #FBFFFD;
+  padding-left: 0.7rem;
 }
 .sec-art-mart form ::-moz-placeholder {
-  color: #F6A1BB;
+  padding-left: 0.7rem;
+  color: #FBFFFD;
 }
 .sec-art-mart form ::placeholder {
-  color: #F6A1BB;
+  padding-left: 0.7rem;
+  color: #FBFFFD;
 }
 
 .sec-phrase-finale {
