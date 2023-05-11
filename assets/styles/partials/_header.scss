@@ -1,55 +1,52 @@
 header {
-    height: 100vh;
-    background: none;
+  height: 100vh;
+  background: none;
+  display: flex;
+
+  padding: $padtest;
+
+  .header-container {
     display: flex;
+    flex-direction: column;
 
-    padding: $padtest;
-
-    .header-container {
+    nav {
+      ul {
         display: flex;
-        flex-direction: column;
+        justify-content: right;
 
-        nav {
-            ul {
-                display: flex;
-                justify-content: right;
+        li {
+          // position: absolute;
 
+          color: $c3;
+          border: 0.1rem solid $c2;
+          background: $c1;
+          padding: 10px 30px;
+          transition: 0.9s;
+          font-size: calc(1rem / 1.3247);
+          letter-spacing: 1px;
+          border-radius: 4rem;
 
-                li {
-                    // position: absolute;
-
-
-                    color: $c3;
-                    border: 0.1rem solid $c2;
-                    background: $c1;
-                    padding: 10px 30px;
-                    transition: 0.9s;
-                    font-size: calc(1rem/1.3247);
-                    letter-spacing: 1px;
-                    border-radius: 4rem;
-
-                    &:hover {
-                        box-shadow: 0;
-                        cursor: pointer;
-                        color: $c2;
-                        transform: translateY(-4px);
-                    }
-                }
-
-            }
+          &:hover {
+            box-shadow: 0;
+            cursor: pointer;
+            color: $c2;
+            transform: translateY(-4px);
+          }
         }
-
-        .headertxtcontainer {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            background: none;
-            height: 100%;
-            width: calc(100%/$psi);
-
-            h1 {
-                margin-bottom: 2rem;
-            }
-        }
+      }
     }
+
+    .headertxtcontainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: none;
+      height: 100%;
+      width: calc(100% / $psi);
+
+      h1 {
+        margin-bottom: 2rem;
+      }
+    }
+  }
 }
