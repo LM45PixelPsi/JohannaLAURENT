@@ -3,7 +3,7 @@ header {
   background: none;
   display: flex;
 
-  padding: $padtest;
+  padding: var(--8pr);
 
   .header-container {
     display: flex;
@@ -42,7 +42,7 @@ header {
       justify-content: center;
       background: none;
       height: 100%;
-      width: calc(100% / $psi);
+      width: var(--1pr);
 
       h1 {
         margin-bottom: 2rem;

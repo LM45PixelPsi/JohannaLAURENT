@@ -1,6 +1,5 @@
 .sec-art-mart {
-  height: 100vh;
-  padding: $padtest;
+  padding: var(--10pr);
   background: linear-gradient($c2, rgba(255, 0, 0, 0)),
     url("../img/art-martial-bg.jpg") no-repeat center/cover fixed;
 
@@ -11,7 +10,7 @@
     height: 100%;
 
     .txt-art-mart {
-      width: calc((100% / $psi/$psi));
+      width: var(--2pr);
       border-radius: 0.3rem;
 
       h2,
@@ -35,34 +34,9 @@
   form {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    gap: calc(
-      (
-          (
-              (
-                  (
-                      (
-                          (
-                              (
-                                  (
-                                      (
-                                          (
-                                              (
-                                                  ((100vw / 1.3247) / 1.3247) /
-                                                    1.3247
-                                                ) / 1.3247
-                                            ) / 1.3247
-                                        ) / 1.3247
-                                    ) / 1.3247
-                                ) / 1.3247
-                            ) / 1.3247
-                        ) / 1.3247
-                    ) / 1.3247
-                ) / 1.3247
-            ) / 1.3247
-        ) / 1.3247
-    );
+    gap: var(--14pr);
     background: none;
-    width: 30vw;
+    width: var(--2pr);
     border-radius: 0.3rem;
 
     input,

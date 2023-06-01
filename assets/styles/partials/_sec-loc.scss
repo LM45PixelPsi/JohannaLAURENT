@@ -1,25 +1,23 @@
 .sec-loc {
+  padding: var(--10pr);
 
-    padding: $padtest;
+  .sec-loc-container {
+    display: flex;
 
+    .sec-loc-bloc {
+      padding-right: var(--10pr);
 
-    .sec-loc-container {
-        display: flex;
+      h2 {
+        margin-bottom: 1vh;
+      }
 
-        .sec-loc-bloc {
-            padding-right: calc((((((((((100vw / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247);
+      h4 {
+        margin-bottom: 10vh;
+      }
 
-            h2 {
-                margin-bottom: 1vh;
-            }
-
-            h4 {
-                margin-bottom: 10vh;
-            }
-
-            a {
-                color: $c3;
-            }
-        }
+      a {
+        color: $c3;
+      }
     }
+  }
 }

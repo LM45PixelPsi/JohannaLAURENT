@@ -1,20 +1,15 @@
 footer {
-    height: calc((((((100vh / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247);
-    padding: calc((((((((((100vh / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247);
-    background: $c3;
-    position: relative;
+  height: var(--7pr);
+  padding: var(--9pr);
+  position: relative;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
-    a {
-        color: $c1;
-    }
-
-    .footer-date {
-        position: absolute;
-        bottom: 1rem;
-        right: 1rem;
-        color: $c1;
-    }
+  .footer-date {
+    position: absolute;
+    bottom: var(--15pr);
+    right: var(--15pr);
+    color: $c2;
+  }
 }

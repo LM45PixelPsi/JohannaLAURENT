@@ -1,28 +1,27 @@
 .sec-presentation {
-    padding: $padtest;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  padding: var(--5pr);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    .sec-presentation-container {
-        display: grid;
-        justify-items: center;
-        gap: 1rem;
+  .sec-presentation-container {
+    display: grid;
+    justify-items: center;
+    gap: 1rem;
 
-        img {
-            border-radius: 100%;
-            width: calc(((((((100vw / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247);
-            ;
-        }
-
-        svg {
-            width: calc(((((((((((((100vw / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247) / 1.3247);
-        }
-
-        p {
-            width: calc((100vw/1.3247)/1.3247);
-            text-align: justify;
-        }
+    img {
+      border-radius: 100%;
+      width: var(--6pr);
     }
+
+    svg {
+      width: var(--11pr);
+    }
+
+    p {
+      width: var(--1pr);
+      text-align: justify;
+    }
+  }
 }

@@ -25,7 +25,7 @@ h4 {
 
 p {
   font-family: "Lato", sans-serif;
-  font-size: 0.7548878991rem;
+  font-size: 0.9rem;
   color: #0c442b;
 }
 
@@ -82,7 +82,7 @@ header {
   height: 100vh;
   background: none;
   display: flex;
-  padding: 7.9605334792vw;
+  padding: var(--8pr);
 }
 header .header-container {
   display: flex;
@@ -114,14 +114,14 @@ header .header-container .headertxtcontainer {
   justify-content: center;
   background: none;
   height: 100%;
-  width: 75.4887899147%;
+  width: var(--1pr);
 }
 header .header-container .headertxtcontainer h1 {
   margin-bottom: 2rem;
 }
 
 .sec-presentation {
-  padding: 7.9605334792vw;
+  padding: var(--5pr);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -134,18 +134,18 @@ header .header-container .headertxtcontainer h1 {
 }
 .sec-presentation .sec-presentation-container img {
   border-radius: 100%;
-  width: 13.9693836818vw;
+  width: var(--6pr);
 }
 .sec-presentation .sec-presentation-container svg {
-  width: 2.5850683349vw;
+  width: var(--11pr);
 }
 .sec-presentation .sec-presentation-container p {
-  width: 56.9855740279vw;
+  width: var(--1pr);
   text-align: justify;
 }
 
 .sec-act {
-  padding: 7.9605334792vw;
+  padding: var(--2pr);
 }
 .sec-act .sec-act-container {
   display: grid;
@@ -170,13 +170,13 @@ header .header-container .headertxtcontainer h1 {
 }
 
 .sec-loc {
-  padding: 7.9605334792vw;
+  padding: var(--10pr);
 }
 .sec-loc .sec-loc-container {
   display: flex;
 }
 .sec-loc .sec-loc-container .sec-loc-bloc {
-  padding-right: 6.0093103942vw;
+  padding-right: var(--10pr);
 }
 .sec-loc .sec-loc-container .sec-loc-bloc h2 {
   margin-bottom: 1vh;
@@ -191,10 +191,10 @@ header .header-container .headertxtcontainer h1 {
 .sec-contact {
   height: 100vh;
   position: relative;
-  padding: 6.0093103942vw;
+  padding: var(--10pr);
 }
 .sec-contact .sec-contact-tel {
-  margin-bottom: 6.0093103942vw;
+  margin-bottom: var(--10pr);
 }
 .sec-contact .sec-contact-tel h2 {
   font-size: calc(1rem + 3vw);
@@ -210,14 +210,13 @@ header .header-container .headertxtcontainer h1 {
 }
 .sec-contact p {
   position: absolute;
-  bottom: 6.0093103942vw;
+  bottom: var(--10pr);
   padding-top: 2px;
   border-top: solid 1px #0c442b;
 }
 
 .sec-art-mart {
-  height: 100vh;
-  padding: 7.9605334792vw;
+  padding: var(--10pr);
   background: linear-gradient(#0c442b, rgba(255, 0, 0, 0)), url("../img/art-martial-bg.jpg") no-repeat center/cover fixed;
 }
 .sec-art-mart .sec-art-mart-container {
@@ -227,7 +226,7 @@ header .header-container .headertxtcontainer h1 {
   height: 100%;
 }
 .sec-art-mart .sec-art-mart-container .txt-art-mart {
-  width: 56.9855740279%;
+  width: var(--2pr);
   border-radius: 0.3rem;
 }
 .sec-art-mart .sec-art-mart-container .txt-art-mart h2,
@@ -246,9 +245,9 @@ header .header-container .headertxtcontainer h1 {
 .sec-art-mart form {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  gap: 1.9514368045vw;
+  gap: var(--14pr);
   background: none;
-  width: 30vw;
+  width: var(--2pr);
   border-radius: 0.3rem;
 }
 .sec-art-mart form input,
@@ -299,7 +298,7 @@ header .header-container .headertxtcontainer h1 {
   height: 100vh;
   display: flex;
   align-items: center;
-  padding: 6.0093103942vw;
+  padding: var(--10pr);
   margin: 0 auto;
   max-width: 900px;
 }
@@ -311,19 +310,15 @@ header .header-container .headertxtcontainer h1 {
 }
 
 footer {
-  height: 18.5052425633vh;
-  padding: 6.0093103942vh;
-  background: #f6a1bb;
+  height: var(--7pr);
+  padding: var(--9pr);
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-footer a {
-  color: #fbfffd;
-}
 footer .footer-date {
   position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-  color: #fbfffd;
+  bottom: var(--15pr);
+  right: var(--15pr);
+  color: #0c442b;
 }/*# sourceMappingURL=index.css.map */

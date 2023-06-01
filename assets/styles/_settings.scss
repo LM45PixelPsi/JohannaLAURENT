@@ -36,7 +36,7 @@ h4 {
 
 p {
   font-family: $f1;
-  font-size: calc(1rem / 1.3247);
+  font-size: 0.9rem;
   color: $c2;
 }
 
@@ -45,12 +45,6 @@ p {
 $psi: 1.3247;
 
 //
-
-$padtest: calc(100vw);
-
-@for $i from 1 through 9 {
-  $padtest: calc($padtest / $psi);
-}
 
 // LA BASE
 
