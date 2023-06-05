@@ -47,7 +47,6 @@ p {
 }
 * a {
   cursor: pointer;
-  color: #03140c;
 }
 * a:visited {
   color: inherit;
