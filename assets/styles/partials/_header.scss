@@ -1,51 +1,72 @@
 header {
-  height: 100vh;
-  background: none;
-  display: flex;
-
-  padding: var(--8pr);
-
   .header-container {
+    height: 100vh;
     display: flex;
     flex-direction: column;
 
     nav {
+      background: url(../img/header-jl-visual.png) center/cover;
+      width: 100%;
+      height: var(--7pr);
+      min-height: 13vh;
+      display: flex;
+
       ul {
         display: flex;
-        justify-content: right;
+        justify-content: space-between;
+        align-items: center;
+        width: var(--1pr);
+        margin: auto;
 
-        li {
-          // position: absolute;
+        .litext {
+          color: $c1;
+          font-weight: 700;
+          font-size: 2rem;
 
-          color: $c3;
-          border: 0.1rem solid $c2;
+          @media (max-width: 500px) {
+            @media (max-width: 500px) {
+              display: none;
+            }
+          }
+        }
+
+        .libtn {
+          color: $c2;
           background: $c1;
           padding: 10px 30px;
           transition: 0.9s;
           font-size: calc(1rem / 1.3247);
           letter-spacing: 1px;
           border-radius: 4rem;
-
+        }
+        li {
           &:hover {
             box-shadow: 0;
             cursor: pointer;
-            color: $c2;
             transform: translateY(-4px);
+            transition: 0.4s;
           }
         }
       }
     }
 
     .headertxtcontainer {
+      margin: 0 auto;
+
+      width: var(--1pr);
       display: flex;
       flex-direction: column;
       justify-content: center;
       background: none;
       height: 100%;
-      width: var(--1pr);
 
       h1 {
         margin-bottom: 2rem;
+      }
+
+      a {
+        margin-top: 1rem;
+        color: $c2;
       }
     }
   }

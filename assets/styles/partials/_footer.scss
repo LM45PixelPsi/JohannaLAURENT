@@ -1,15 +1,9 @@
 footer {
-  height: var(--7pr);
-  padding: var(--9pr);
-  position: relative;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
+  background: url(../img/header-jl-visual.png) center/cover no-repeat;
+  padding: 1rem;
   .footer-date {
-    position: absolute;
-    bottom: var(--15pr);
-    right: var(--15pr);
-    color: $c2;
+    text-align: right;
+    color: $c1;
+    font-weight: 700;
   }
 }

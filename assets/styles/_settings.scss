@@ -1,23 +1,25 @@
 // COLORS
 
 $c1: #fbfffd;
-$c2: #0c442b;
+$c2: #03140c;
 $c3: #f6a1bb;
 $c4: #d3ddff;
 
 // FONTS
 
-$f1: "Lato", sans-serif;
+$f1: "Roboto", sans-serif;
 
 h1 {
   font-family: $f1;
-  font-size: calc(1rem + 3vw);
+  font-size: clamp(1.6rem, 6vw + 0.5rem, 5rem);
+  font-weight: 500;
   color: $c2;
 }
 
 h2 {
   font-family: $f1;
   font-size: 1.7436rem;
+  font-weight: 500;
   color: $c2;
 }
 
@@ -25,20 +27,26 @@ h3 {
   font-family: $f1;
   font-size: 1.3247rem;
   color: $c2;
+  font-weight: 400;
 }
 
 h4 {
   font-family: $f1;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 300;
   color: $c2;
 }
 
 p {
   font-family: $f1;
   font-size: 0.9rem;
+  font-weight: 300;
   color: $c2;
+  line-height: 1.2rem;
+  letter-spacing: 0.05rem;
 }
+
+// SVG
 
 // PSI
 
@@ -73,7 +81,7 @@ $psi: 1.3247;
 .btn {
   // position: absolute;
 
-  color: $c3;
+  color: $c2;
   border: 0.1rem solid $c2;
   background: $c1;
   padding: 10px 30px;

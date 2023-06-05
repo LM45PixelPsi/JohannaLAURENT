@@ -1,13 +1,16 @@
 .sec-contact {
-  height: 100vh;
   position: relative;
-  padding: var(--10pr);
+  width: var(--1pr);
+  margin: 0 auto;
+  min-height: 100vh;
 
   .sec-contact-tel {
+    margin-top: 1rem;
+
     margin-bottom: var(--10pr);
 
     h2 {
-      font-size: calc(1rem + 3vw);
+      font-size: clamp(1.5rem, 4vw, 10rem);
     }
 
     a {
@@ -15,18 +18,31 @@
     }
   }
 
-  .sec-contact-mail {
-    h3 {
-      font-size: calc(1rem + 2vw);
-    }
+  .sec-loc {
+    .sec-loc-container {
+      .sec-loc-bloc {
+        padding-right: var(--10pr);
 
-    a {
-      font-size: calc(1rem + 1.5vw);
+        h3 {
+          font-size: clamp(1.2rem, 3vw, 9rem);
+        }
+
+        h4 {
+          margin-bottom: 1rem;
+        }
+
+        .btn {
+          color: $c3;
+          margin: 1rem 0 1rem;
+        }
+      }
     }
   }
 
   p {
+    width: 100%;
     position: absolute;
+    font-size: 0.8rem;
     bottom: var(--10pr);
     padding-top: 2px;
     border-top: solid 1px $c2;

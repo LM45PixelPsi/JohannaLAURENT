@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Johanna LAURENT fasciathérapeute</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./assets/styles/index.css" />
 
     <link
@@ -15,13 +22,6 @@
       sizes="64x64"
     />
 
-    <!-- A TEJ -->
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-    </style>
-    <!-- .. -->
-
     <script src="./assets/js/svg.js"></script>
     <script src="./assets/js/psi.js"></script>
 
@@ -30,16 +30,22 @@
 
   <body>
     <header>
+      <!-- <div id="headerimg"></div> -->
       <div class="header-container">
         <nav>
           <ul>
-            <li><a href="#sec-contact">Prendre rendez vous</a></li>
+            <li class="litext">
+              <a href="#secpresentation">Johana LAURENT</a>
+            </li>
+            <li class="libtn">
+              <a href="#sec-contact">Prendre rendez vous</a>
+            </li>
           </ul>
         </nav>
         <div class="headertxtcontainer">
           <h1>
-            La fasciathérapie : <br />une approche globale pour prendre soin de
-            soi
+            La fasciathérapie : <br />une approche globale <br />
+            pour prendre soin de soi
           </h1>
           <p>
             Au cœur de notre corps se trouve un réseau fascinant de tissus
@@ -49,68 +55,76 @@
             le drainage lymphatique et participant à notre système immunitaire.
             Prenez soin de vous avec cette pratique manuelle douce et profonde.
           </p>
-        </div>
-        <div>
-          <a target="_blank" class="btn" href="https://fasciafrance.fr/"
+          <a
+            target="_blank"
+            href="https://fasciafrance.fr/fascia-la-fasciatherapie/"
             >En savoir plus sur la fasciathérapie</a
           >
         </div>
       </div>
     </header>
 
-    <div class="sec-presentation">
-      <div class="sec-presentation-container">
+    <div class="sec-presentation" id="secpresentation">
+      <div class="sec-presentation-container" id="pres1">
         <img
           src="./assets/img/presentation.jpg"
           alt="Johanna LAURENT portrait"
         />
-        <div id="uni"></div>
+        <h2>Johanna LAURENT</h2>
         <p>
           Forte de mes 21 ans d'expérience en tant que sage-femme et de ma
           formation approfondie en fasciathérapie, gymnastique sensorielle
           périnatale et art martial sensoriel, j'ai développé une approche
           holistique pour accompagner mes patients.<br />
+          Avec mes compétences en fasciathérapie, massage sensoriel apaisant,
+          art martial sensoriel et méditation de pleine présence, je propose un
+          accompagnement complet à toutes les étapes de la vie.
+        </p>
+        <img
+          src="./assets/img/header-jl-visual.png"
+          class="img-mask-pres"
+          id="mask1"
+          alt=""
+        />
+        <!-- <div id="uni"></div> -->
+        <p>
           J'offre un soutien spécifique aux femmes, traitant des problèmes tels
           que l'hypofertilité, les troubles de la libido, les troubles
           uro-gynécologiques et l'accompagnement des traumatismes. Je propose
           également un accompagnement précieux aux hommes pour la gestion du
-          stress, de la fatigue et des tensions corporelles.<br />
+          stress, de la fatigue et des tensions corporelles.
+        </p>
+        <img
+          src="./assets/img/header-jl-visual.png"
+          class="img-mask-pres"
+          id="mask2"
+          alt=""
+        />
+
+        <!-- <div id="SvgPres3"></div> -->
+        <p>
           Je travaille également avec les couples, les aidant à gérer les
           conflits et les séparations. Une attention particulière est accordée à
           la maternité, favorisant des grossesses, accouchements, post-partums
           et allaitements naturels. Je suis également présente pour les
           situations d'accouchements traumatiques, le rééquilibrage
-          post-césarienne et la gestion de la dépression.<br />
+          post-césarienne et la gestion de la dépression.
+        </p>
+        <img
+          src="./assets/img/header-jl-visual.png"
+          class="img-mask-pres"
+          id="mask3"
+          alt=""
+        />
+
+        <!-- <div id="SvgPres4"></div> -->
+        <p>
           En ce qui concerne la parentalité, je suis engagée à aider les parents
           à développer une relation saine avec leurs enfants. Pour les bébés, je
           traite des problèmes tels que les troubles du sommeil, les pleurs
           excessifs, les reflux, les naissances traumatiques ou par césarienne,
-          la plagiocéphalie et les freins de langue.<br />
-          Avec mes compétences en fasciathérapie, massage sensoriel apaisant,
-          art martial sensoriel et méditation de pleine présence, je propose un
-          accompagnement complet à toutes les étapes de la vie.
+          la plagiocéphalie et les freins de langue.
         </p>
-      </div>
-    </div>
-
-    <div class="sec-loc">
-      <div class="sec-loc-container">
-        <!-- <div class="sec-loc-bloc">
-                <h2>à Paris</h2>
-                <h4>44 rue du tutu, 75 000 Paris</h4>
-                <a href="lien google map" target="_blank" title="Localiser">Localiser</a>
-            </div> -->
-        <div class="sec-loc-bloc">
-          <h2>Chatou (à 15 min de Paris)</h2>
-          <h4>6 Rue du Dr Rochefort, 78400 Chatou</h4>
-          <a
-            class="btn"
-            href="https://goo.gl/maps/DMTV8HtsWAGiG8166"
-            target="_blank"
-            title="Localiser"
-            >Localiser</a
-          >
-        </div>
       </div>
     </div>
 
@@ -121,13 +135,33 @@
           >+33 6 18 07 27 83</a
         >
       </div>
+      <div class="sec-loc">
+        <div class="sec-loc-container">
+          <!-- <div class="sec-loc-bloc">
+                  <h2>à Paris</h2>
+                  <h4>44 rue du tutu, 75 000 Paris</h4>
+                  <a href="lien google map" target="_blank" title="Localiser">Localiser</a>
+              </div> -->
+          <div class="sec-loc-bloc">
+            <h3>à Chatou (15 min de Paris)</h3>
+            <h4>6 Rue du Dr Rochefort, 78400 Chatou</h4>
+            <a
+              class="btn"
+              href="https://goo.gl/maps/DMTV8HtsWAGiG8166"
+              target="_blank"
+              title="Localiser"
+              >Localiser</a
+            >
+          </div>
+        </div>
+      </div>
       <!-- <div class="sec-contact-mail">
             <h3>Ou par mail</h3>
             <a id="contact-mail" href="mailto:exemple@adressemail.com" target="_blank">hrefmailamodif@lalala.fr</a>
         </div> -->
       <p id="prix">
-        Première consultation de 1h30 et séance de 1h : 75€ - Séance à domicile
-        maman / bébé 2h30 : 190€. Prix TTC
+        Première consultation de 1h30 et séance de 1h : 75€ <br />
+        Séance à domicile maman / bébé 2h30 : 190€. Prix TTC
       </p>
     </div>
 
