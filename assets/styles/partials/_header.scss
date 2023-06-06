@@ -7,7 +7,8 @@ header {
     nav {
       background: url(../img/header-jl-visual.png) center/cover;
       width: 100%;
-      height: var(--7pr);
+      height: 20vh;
+      // height: var(--5pr);
       min-height: 13vh;
       display: flex;
 
@@ -18,15 +19,28 @@ header {
         width: var(--1pr);
         margin: auto;
 
+        li {
+          transition: 0.9s;
+          &:hover {
+            box-shadow: 0;
+            cursor: pointer;
+            transform: translateY(-4px);
+          }
+        }
+
         .litext {
           color: $c1;
-          font-weight: 700;
-          font-size: 2rem;
+          font-family: $f2;
+          font-weight: bold;
+          font-size: 3rem;
+          transform: translateY(9px);
 
-          @media (max-width: 500px) {
-            @media (max-width: 500px) {
-              display: none;
-            }
+          &:hover {
+            transform: translateY(5px);
+          }
+
+          @media (max-width: 600px) {
+            display: none;
           }
         }
 
@@ -34,25 +48,15 @@ header {
           color: $c2;
           background: $c1;
           padding: 10px 30px;
-          transition: 0.9s;
           font-size: calc(1rem / 1.3247);
           letter-spacing: 1px;
           border-radius: 4rem;
-        }
-        li {
-          &:hover {
-            box-shadow: 0;
-            cursor: pointer;
-            transform: translateY(-4px);
-            transition: 0.4s;
-          }
         }
       }
     }
 
     .headertxtcontainer {
       margin: 0 auto;
-
       width: var(--1pr);
       display: flex;
       flex-direction: column;
@@ -62,6 +66,11 @@ header {
 
       h1 {
         margin-bottom: 2rem;
+        font-family: $f2;
+        font-size: clamp(1.2rem, 9vw + 0.5rem, 10rem);
+        font-weight: 400;
+        color: $c2;
+        line-height: 100%;
       }
 
       a {

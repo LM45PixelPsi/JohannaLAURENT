@@ -27,6 +27,12 @@
     //   fill: $c2;
     // }
 
+    h2 {
+      font-family: $f2;
+      font-size: clamp(2.5rem, 7vw + 0.5rem, 4rem);
+      font-weight: 400;
+    }
+
     #mask1 {
       mask: url(../svg/SvgPres2.svg) center/contain no-repeat;
       width: 5rem;

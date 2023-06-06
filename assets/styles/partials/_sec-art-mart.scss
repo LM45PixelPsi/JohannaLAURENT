@@ -1,86 +1,117 @@
 .sec-art-mart {
-  padding: var(--10pr);
-  background: linear-gradient($c2, rgba(255, 0, 0, 0)),
-    url("../img/art-martial-bg.jpg") no-repeat center/cover fixed;
+  display: grid;
+  grid-template-columns: 1fr var(--3pr);
+  gap: var(--10pr);
+  min-height: 70vh;
+  width: var(--1pr);
+  margin: 10vh auto 0;
+
+  @media (max-width: 580px) {
+    display: block;
+    min-height: 70vh;
+    width: var(--1pr);
+    margin: 10vh auto 0;
+  }
+
+  a {
+    color: $c2;
+  }
+
+  #art-mart-img {
+    background: url("../img/art-martial-bg.jpg") no-repeat center/cover;
+    margin-left: -12.255605042651169vw;
+    border-radius: 0.4rem;
+
+    @media (max-width: 580px) {
+      height: 30vh;
+      width: var(--1pr);
+      margin: 0 auto var(--12pr);
+    }
+  }
 
   .sec-art-mart-container {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100%;
+    align-items: center;
+
+    @media (max-width: 580px) {
+      display: block;
+    }
 
     .txt-art-mart {
-      width: var(--2pr);
-      border-radius: 0.3rem;
+      h2 {
+        font-size: clamp(3rem, 5vw + 0.5rem, 7rem);
+        text-align: left;
+        font-family: $f2;
+        font-weight: 300;
 
-      h2,
-      h4,
+        @media (max-width: 580px) {
+          text-align: center;
+        }
+      }
+
       p {
-        color: $c1;
+        text-align: justify;
       }
 
-      a {
-        color: $c1;
-        font-weight: bold;
-      }
-
-      h4 {
-        padding: 1rem 0;
-      }
+      // #mask1artmart {
+      //   mask: url(../svg/SvgPres3.svg) center/contain no-repeat;
+      //   width: 5rem;
+      //   height: 5rem;
+      // }
     }
   }
 
-  form {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: var(--14pr);
-    background: none;
-    width: var(--2pr);
-    border-radius: 0.3rem;
+  // form {
+  //   display: grid;
+  //   grid-template-rows: 1fr 1fr;
+  //   gap: var(--14pr);
+  //   background: none;
+  //   width: var(--2pr);
+  //   border-radius: 0.3rem;
 
-    input,
-    textarea,
-    button {
-      margin: 0;
-      padding: 0.3rem;
-      border: none;
-      line-height: none;
-      border-radius: 0.3rem;
-    }
+  //   input,
+  //   textarea,
+  //   button {
+  //     margin: 0;
+  //     padding: 0.3rem;
+  //     border: none;
+  //     line-height: none;
+  //     border-radius: 0.3rem;
+  //   }
 
-    input,
-    textarea {
-      background: none;
-      color: $c1;
-    }
+  //   input,
+  //   textarea {
+  //     background: none;
+  //     color: $c1;
+  //   }
 
-    button {
-      font-family: $f1;
-      text-transform: uppercase;
-      color: $c2;
-      padding: 10px 30px;
-      transition: 1s;
-      font-size: 0.6rem;
-      letter-spacing: 1px;
-      background: linear-gradient(60deg, $c1, $c3);
-      background-size: 300%;
-      background-position: left;
+  //   button {
+  //     font-family: $f1;
+  //     text-transform: uppercase;
+  //     color: $c2;
+  //     padding: 10px 30px;
+  //     transition: 1s;
+  //     font-size: 0.6rem;
+  //     letter-spacing: 1px;
+  //     background: linear-gradient(60deg, $c1, $c3);
+  //     background-size: 300%;
+  //     background-position: left;
 
-      &:hover {
-        cursor: pointer;
-        background-position: center;
-        transform: translateY(-3px);
-      }
-    }
+  //     &:hover {
+  //       cursor: pointer;
+  //       background-position: center;
+  //       transform: translateY(-3px);
+  //     }
+  //   }
 
-    input {
-      border: 0.1rem solid $c1;
-      padding-left: 0.7rem;
-    }
+  //   input {
+  //     border: 0.1rem solid $c1;
+  //     padding-left: 0.7rem;
+  //   }
 
-    ::placeholder {
-      padding-left: 0.7rem;
-      color: $c1;
-    }
-  }
+  //   ::placeholder {
+  //     padding-left: 0.7rem;
+  //     color: $c1;
+  //   }
+  // }
 }

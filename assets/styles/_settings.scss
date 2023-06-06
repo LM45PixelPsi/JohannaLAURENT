@@ -7,13 +7,25 @@ $c4: #d3ddff;
 
 // FONTS
 
-$f1: "Roboto", sans-serif;
+@font-face {
+  font-family: "Decoracha";
+  src: url("../font/Decoracha-Regular.woff2") format("woff2");
+  /* Ajoutez d'autres formats de police si nécessaire */
+}
 
-h1 {
-  font-family: $f1;
-  font-size: clamp(1.6rem, 6vw + 0.5rem, 5rem);
-  font-weight: 500;
-  color: $c2;
+$f1: "Roboto", sans-serif;
+$f2: "Decoracha", sans-serif;
+
+.deco {
+  -moz-font-feature-settings: "liga" 1, "clig" 0, "calt" 1;
+  -webkit-font-feature-settings: "liga" 1, "clig" 0, "calt" 1;
+  font-feature-settings: "liga" 1, "clig" 0, "calt" 1;
+}
+
+.sansdeco {
+  -moz-font-feature-settings: "liga" 1, "clig" 0, "calt" 0;
+  -webkit-font-feature-settings: "liga" 1, "clig" 0, "calt" 0;
+  font-feature-settings: "liga" 1, "clig" 0, "calt" 0;
 }
 
 h2 {
@@ -68,6 +80,8 @@ $psi: 1.3247;
 
   a {
     cursor: pointer;
+    color: $c2;
+    font-weight: 400;
   }
 
   a:visited {
@@ -76,26 +90,6 @@ $psi: 1.3247;
 }
 
 // BUTTON
-
-.btn {
-  // position: absolute;
-
-  color: $c2;
-  border: 0.1rem solid $c2;
-  background: $c1;
-  padding: 10px 30px;
-  transition: 0.9s;
-  font-size: calc(1rem / 1.3247);
-  letter-spacing: 1px;
-  border-radius: 4rem;
-
-  &:hover {
-    box-shadow: 0;
-    cursor: pointer;
-    color: $c2;
-    transform: translateY(-4px);
-  }
-}
 
 // FORM
 
