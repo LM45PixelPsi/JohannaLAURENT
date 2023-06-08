@@ -29,10 +29,16 @@
   </head>
 
   <body>
-    <header>
+    <div id="loadingscreen">
+      <div id="loadingscreensvg"></div>
+    </div>
+
+    <script src="./assets/js/loadingscreen.js"></script>
+
+    <header class="loaded">
       <!-- <div id="headerimg"></div> -->
       <div class="header-container">
-        <nav>
+        <nav id="navbar">
           <ul>
             <li class="litext sansdeco">
               <a class="litext" href="#secpresentation">Johanna LAURENT</a>
@@ -48,19 +54,25 @@
             une approche globale<br />
             pour prendre soin de soi
           </h1>
-          <p>
-            Au cœur de notre corps se trouve un réseau fascinant de tissus
-            conjonctifs connectés, enveloppant et reliant nos organes, muscles,
-            os, vaisseaux sanguins et nerfs. Les fascias jouent un rôle
-            éssentiel dans notre santé global en absorbant les chocs, régulant
-            le drainage lymphatique et participant à notre système immunitaire.
-            Prenez soin de vous avec cette pratique manuelle douce et profonde.
-          </p>
-          <a
-            target="_blank"
-            href="https://fasciafrance.fr/fascia-la-fasciatherapie/"
-            >En savoir plus sur la fasciathérapie</a
-          >
+          <div class="headertxtsup">
+            <p>
+              Au cœur de notre corps se trouve un réseau fascinant de tissus
+              conjonctifs connectés, enveloppant et reliant nos organes,
+              muscles, os, vaisseaux sanguins et nerfs. Les fascias jouent un
+              rôle éssentiel dans notre santé global en absorbant les chocs,
+              régulant le drainage lymphatique et participant à notre système
+              immunitaire. Prenez soin de vous avec cette pratique manuelle
+              douce et profonde.
+            </p>
+            <div id="acontainer">
+              <a
+                class="discretlink"
+                target="_blank"
+                href="https://fasciafrance.fr/fascia-la-fasciatherapie/"
+                >En savoir plus sur la fasciathérapie</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -147,7 +159,7 @@
             <h3>à Chatou (15 min de Paris)</h3>
 
             <a
-              class="btn"
+              class="discretlink"
               href="https://goo.gl/maps/DMTV8HtsWAGiG8166"
               target="_blank"
               title="Localiser"
@@ -210,7 +222,7 @@
       </div>
     </div>
 
-    <div class="sec-phrase-finale">
+    <div class="sec-phrase-finale" id="txtfinal">
       <h3 class="sansdeco">
         Retrouvez sérénité et vitalité grâce à la fasciathérapie, une méthode
         douce et puissante qui vous aide à libérer vos tensions et à réaccorder

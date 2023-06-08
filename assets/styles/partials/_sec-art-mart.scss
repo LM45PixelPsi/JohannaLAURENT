@@ -21,11 +21,16 @@
     background: url("../img/art-martial-bg.jpg") no-repeat center/cover;
     margin-left: -12.255605042651169vw;
     border-radius: 0.4rem;
+    transition: ease-out 3s;
+    transform: translateX(-50vw);
+    opacity: 0.4;
 
     @media (max-width: 580px) {
       height: 30vh;
       width: var(--1pr);
       margin: 0 auto var(--12pr);
+      transform: translateX(0);
+      opacity: 1;
     }
   }
 

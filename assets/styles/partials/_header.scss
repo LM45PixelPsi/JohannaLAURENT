@@ -8,7 +8,9 @@ header {
       background: url(../img/header-jl-visual.png) center/cover;
       width: 100%;
       height: 20vh;
-      // height: var(--5pr);
+      transform: translateY(-20vh);
+      min-height: 60px;
+      transition: 1.4s ease-out;
       min-height: 13vh;
       display: flex;
 
@@ -67,15 +69,29 @@ header {
       h1 {
         margin-bottom: 2rem;
         font-family: $f2;
-        font-size: clamp(1.2rem, 9vw + 0.5rem, 10rem);
+        font-size: clamp(1.2rem, 9vw + 0.5rem, 6.5rem);
         font-weight: 400;
         color: $c2;
         line-height: 100%;
       }
 
-      a {
-        margin-top: 1rem;
-        color: $c2;
+      .headertxtsup {
+        opacity: 0;
+        transition: 1s ease-out;
+        transform: translateY(10vh);
+        margin: 0 auto;
+        width: var(--1pr);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        #acontainer {
+          margin-top: 1rem;
+          a {
+            margin-top: 1rem;
+            width: auto;
+          }
+        }
       }
     }
   }

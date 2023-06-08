@@ -1,8 +1,14 @@
+// LOADING
+
+body {
+  overflow: hidden;
+}
+
 // COLORS
 
 $c1: #fbfffd;
 $c2: #03140c;
-$c3: #f6a1bb;
+$c3: #ebbbc9;
 $c4: #d3ddff;
 
 // FONTS
@@ -90,6 +96,27 @@ $psi: 1.3247;
 }
 
 // BUTTON
+
+.discretlink {
+  color: $c2;
+  transition: 2s ease;
+  font-family: $f1;
+  font-weight: 400;
+  border-bottom: 1.7px solid $c3;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  padding-bottom: 0.4rem;
+
+  &:hover {
+    cursor: pointer;
+    border-bottom: 1.7px solid $c4;
+    padding-bottom: 0.1rem;
+  }
+
+  @media (max-width: 440px) {
+    font-size: 0.75rem;
+  }
+}
 
 // FORM
 
