@@ -15,6 +15,6 @@ const inclSVG = async (...svgContainerIds) => {
   await Promise.all(fetchPromises);
 };
 
-inclSVG("uni", "SvgPres2", "SvgPres3", "SvgPres4", "loadingscreensvg");
+inclSVG("loadingscreensvg", "asvg", "asvg2");
 // mettre dans la funct le nom du svg placer dans le dossier (s'assurer que la div à l'id correspondant au nom du svg
 // ex :      <div class="svg-container" id="svgtest4"></div> )

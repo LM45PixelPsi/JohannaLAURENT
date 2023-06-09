@@ -53,4 +53,10 @@
       z-index: -1;
     }
   }
+
+  #asvg2 {
+    @media (max-width: 357px) {
+      display: none;
+    }
+  }
 }

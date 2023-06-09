@@ -57,66 +57,6 @@
       p {
         text-align: justify;
       }
-
-      // #mask1artmart {
-      //   mask: url(../svg/SvgPres3.svg) center/contain no-repeat;
-      //   width: 5rem;
-      //   height: 5rem;
-      // }
     }
   }
-
-  // form {
-  //   display: grid;
-  //   grid-template-rows: 1fr 1fr;
-  //   gap: var(--14pr);
-  //   background: none;
-  //   width: var(--2pr);
-  //   border-radius: 0.3rem;
-
-  //   input,
-  //   textarea,
-  //   button {
-  //     margin: 0;
-  //     padding: 0.3rem;
-  //     border: none;
-  //     line-height: none;
-  //     border-radius: 0.3rem;
-  //   }
-
-  //   input,
-  //   textarea {
-  //     background: none;
-  //     color: $c1;
-  //   }
-
-  //   button {
-  //     font-family: $f1;
-  //     text-transform: uppercase;
-  //     color: $c2;
-  //     padding: 10px 30px;
-  //     transition: 1s;
-  //     font-size: 0.6rem;
-  //     letter-spacing: 1px;
-  //     background: linear-gradient(60deg, $c1, $c3);
-  //     background-size: 300%;
-  //     background-position: left;
-
-  //     &:hover {
-  //       cursor: pointer;
-  //       background-position: center;
-  //       transform: translateY(-3px);
-  //     }
-  //   }
-
-  //   input {
-  //     border: 0.1rem solid $c1;
-  //     padding-left: 0.7rem;
-  //   }
-
-  //   ::placeholder {
-  //     padding-left: 0.7rem;
-  //     color: $c1;
-  //   }
-  // }
 }

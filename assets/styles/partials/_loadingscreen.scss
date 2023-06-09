@@ -16,6 +16,7 @@
     transition: 1s;
     svg {
       height: 20vh;
+      max-width: var(--4pr);
       fill: rgb(182, 225, 225);
       animation: hue-rotate-animation 10s linear infinite;
 

@@ -16,7 +16,6 @@ $c4: #d3ddff;
 @font-face {
   font-family: "Decoracha";
   src: url("../font/Decoracha-Regular.woff2") format("woff2");
-  /* Ajoutez d'autres formats de police si nécessaire */
 }
 
 $f1: "Roboto", sans-serif;
@@ -64,13 +63,9 @@ p {
   letter-spacing: 0.05rem;
 }
 
-// SVG
-
 // PSI
 
 $psi: 1.3247;
-
-//
 
 // LA BASE
 
@@ -99,7 +94,7 @@ $psi: 1.3247;
 
 .discretlink {
   color: $c2;
-  transition: 2s ease;
+  transition: 0.6s ease;
   font-family: $f1;
   font-weight: 400;
   border-bottom: 1.7px solid $c3;
@@ -107,36 +102,23 @@ $psi: 1.3247;
   letter-spacing: 1px;
   padding-bottom: 0.4rem;
 
+  svg {
+    height: 10px;
+    fill: $c3;
+    transition: 0.6s;
+  }
+
   &:hover {
     cursor: pointer;
     border-bottom: 1.7px solid $c4;
-    padding-bottom: 0.1rem;
+
+    svg {
+      height: 15px;
+      fill: $c4;
+    }
   }
 
   @media (max-width: 440px) {
     font-size: 0.75rem;
   }
 }
-
-// FORM
-
-form {
-  margin: 0;
-  padding: 0;
-  border: none;
-
-  input,
-  textarea,
-  button {
-    margin: 0;
-    padding: 0;
-    border: none;
-    line-height: none;
-  }
-}
-
-// BODY
-
-// body {
-//     padding: 0 4.75%;
-// }

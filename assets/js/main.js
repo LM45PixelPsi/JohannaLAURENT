@@ -57,17 +57,17 @@ window.addEventListener("scroll", () => {
 
 // Before Contact
 
-const beforeElement = document.querySelector("#prix::before");
-const windowHeight = window.innerHeight;
+// const beforeElement = document.querySelector("#prix::before");
+// const windowHeight = window.innerHeight;
 
-window.addEventListener("scroll", () => {
-  const scrollPosition = window.scrollY;
-  const beforeHeight = windowHeight - scrollPosition;
+// window.addEventListener("scroll", () => {
+//   const scrollPosition = window.scrollY;
+//   const beforeHeight = windowHeight - scrollPosition;
 
-  // Limitez la hauteur minimale de l'élément ::before
-  const minHeight = 50; // Ajustez cette valeur selon vos besoins
+//   // Limitez la hauteur minimale de l'élément ::before
+//   const minHeight = 50; // Ajustez cette valeur selon vos besoins
 
-  if (beforeHeight >= minHeight) {
-    beforeElement.style.height = beforeHeight + "px";
-  }
-});
+//   if (beforeHeight >= minHeight) {
+//     beforeElement.style.height = beforeHeight + "px";
+//   }
+// });
