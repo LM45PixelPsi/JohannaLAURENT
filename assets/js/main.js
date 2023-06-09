@@ -5,10 +5,12 @@ const txtHeader = document.querySelector(".headertxtsup");
 
 document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
-    navBar.style.transform = "translateY(0)";
+    navBar.style.filter = "blur(0)";
+    navBar.style.opacity = "1";
+    z;
   }, 2500);
   setTimeout(() => {
-    txtHeader.style.transform = "translateY(0)";
+    txtHeader.style.filter = "blur(0)";
     txtHeader.style.opacity = "1";
   }, 3200);
 });
@@ -37,37 +39,20 @@ window.addEventListener("scroll", () => {
 
 // ART MART
 
-const artMartDiv = document.querySelector(".sec-art-mart");
-const artMartImg = document.querySelector("#art-mart-img");
-
-window.addEventListener("scroll", () => {
-  const windowHeight = window.innerHeight;
-
-  const divRect = artMartDiv.getBoundingClientRect();
-  const divTop = divRect.top;
-  const divBottom = divRect.bottom;
-
-  const divPosition = divTop + (divBottom - divTop) / 2;
-
-  if (divPosition >= 0 && divPosition <= windowHeight) {
-    artMartImg.style.transform = "translateX(0)";
-    artMartImg.style.opacity = "1";
-  }
-});
-
-// Before Contact
-
-// const beforeElement = document.querySelector("#prix::before");
-// const windowHeight = window.innerHeight;
+// const artMartDiv = document.querySelector(".sec-art-mart");
+// const artMartImg = document.querySelector("#art-mart-img");
 
 // window.addEventListener("scroll", () => {
-//   const scrollPosition = window.scrollY;
-//   const beforeHeight = windowHeight - scrollPosition;
+//   const windowHeight = window.innerHeight;
 
-//   // Limitez la hauteur minimale de l'élément ::before
-//   const minHeight = 50; // Ajustez cette valeur selon vos besoins
+//   const divRect = artMartDiv.getBoundingClientRect();
+//   const divTop = divRect.top;
+//   const divBottom = divRect.bottom;
 
-//   if (beforeHeight >= minHeight) {
-//     beforeElement.style.height = beforeHeight + "px";
+//   const divPosition = divTop + (divBottom - divTop) / 2;
+
+//   if (divPosition >= 0 && divPosition <= windowHeight) {
+//     artMartImg.style.transform = "translateX(0)";
+//     artMartImg.style.opacity = "1";
 //   }
 // });

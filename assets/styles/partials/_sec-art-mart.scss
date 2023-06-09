@@ -20,10 +20,7 @@
   #art-mart-img {
     background: url("../img/art-martial-bg.jpg") no-repeat center/cover;
     margin-left: -12.255605042651169vw;
-    border-radius: 0.4rem;
-    transition: ease-out 3s;
-    transform: translateX(-50vw);
-    opacity: 0.4;
+    border-radius: 0.1rem;
 
     @media (max-width: 580px) {
       height: 30vh;
